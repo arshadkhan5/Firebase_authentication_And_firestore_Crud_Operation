@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "176736338759",
+    "project_id": "taskbyarshad1",
+    "storage_bucket": "taskbyarshad1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:176736338759:android:1a8c306abc508f6d128262",
+        "android_client_info": {
+          "package_name": "com.example.taskbyarshad"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYNibdfQzB_wjeEi-p9WwSh9HVQLTyRjs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

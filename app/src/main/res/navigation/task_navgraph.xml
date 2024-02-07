@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/task_navgraph"
+    app:startDestination="@id/dashboard">
+
+    <fragment
+        android:id="@+id/dashboard"
+        android:name="com.example.taskbyarshad.views.fragments.Dashboard"
+        android:label="fragment_dashboard"
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/action_dashboard_to_update"
+            app:destination="@id/update" />
+        <action
+            android:id="@+id/action_dashboard_to_addUser"
+            app:destination="@id/addUser" />
+    </fragment>
+    <fragment
+        android:id="@+id/update"
+        android:name="com.example.taskbyarshad.views.fragments.Update"
+        android:label="fragment_update"
+        tools:layout="@layout/fragment_update" >
+
+        <action
+            android:id="@+id/action_update_to_dashboard"
+            app:destination="@id/dashboard" />
+    </fragment>
+    <fragment
+        android:id="@+id/addUser"
+        android:name="com.example.taskbyarshad.views.fragments.AddUser"
+        android:label="fragment_add_user"
+        tools:layout="@layout/fragment_add_user" >
+        <action
+            android:id="@+id/action_addUser_to_dashboard"
+            app:destination="@id/dashboard" />
+    </fragment>
+</navigation>
